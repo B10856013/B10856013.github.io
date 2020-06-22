@@ -31,14 +31,7 @@
     .item-group {
         width: 100%;
         max-width: 1400px;
-        margin: auto;
-    }
-    
-    .footer {
-        background-color: #333;
-        color: #aaa;
-        text-align: center;
-        padding: 10px 0;
+        margin: 0 175px;
     }
     
     .title h2 {
@@ -60,20 +53,28 @@
     
     .item {
         margin: 0 10px 20px;
+        image-orientation: initial;
     }
     
     .item .text h3 {
-        font-size: 24px;
+        font-size: 30px;
         text-align: center;
+        font-family: 微軟正黑體;
     }
     
     .item .pic img {
-        width: 100%;
+        width: 500px;
+        height: 300px;
     }
     
-    .two {
-        margin: 60px 0;
-        background-color: #ffa;
+    .item .text p {
+        font-size: 30px;
+        text-align: center;
+        font-family: 微軟正黑體;
+    }
+    
+    .item .text a {
+        text-decoration: none;
     }
     
     .header {
@@ -137,6 +138,10 @@
         nav a {
             border-bottom: none;
         }
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
     }
     
     nav {
@@ -165,103 +170,6 @@
         left: 0;
     }
     
-    .two .item {
-        display: flex;
-        margin: 0;
-    }
-    
-    .two .item .pic,
-    .two .item .text {
-        width: 50%;
-        margin: 0;
-    }
-    
-    .two .item .text {
-        display: flex;
-        padding: 0 10px;
-        box-sizing: border-box;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    @media only screen and (min-width:768px) {
-        .col-s-1 {
-            width: 8.33%;
-        }
-        .col-s-2 {
-            width: 16.66%;
-        }
-        .col-s-3 {
-            width: 25%;
-        }
-        .col-s-4 {
-            width: 33.33%;
-        }
-        .col-s-5 {
-            width: 41.66%;
-        }
-        .col-s-6 {
-            width: 50%;
-        }
-        .col-s-7 {
-            width: 58.33%;
-        }
-        .col-s-8 {
-            width: 66.66%;
-        }
-        .col-s-9 {
-            width: 75%;
-        }
-        .col-s-10 {
-            width: 83.33%;
-        }
-        .col-s-11 {
-            width: 91.66%;
-        }
-        .col-s-12 {
-            width: 100%;
-        }
-    }
-    
-    @media only screen and (min-width: 768px) {
-        .col-1 {
-            width: 8.33%;
-        }
-        .col-2 {
-            width: 16.66%;
-        }
-        .col-3 {
-            width: 25%;
-        }
-        .col-4 {
-            width: 33.33%;
-        }
-        .col-5 {
-            width: 41.66%;
-        }
-        .col-6 {
-            width: 50%;
-        }
-        .col-7 {
-            width: 58.33%;
-        }
-        .col-8 {
-            width: 66.66%;
-        }
-        .col-9 {
-            width: 75%;
-        }
-        .col-10 {
-            width: 83.33%;
-        }
-        .col-11 {
-            width: 91.66%;
-        }
-        .col-12 {
-            width: 100%;
-        }
-    }
-    
     .header {
         height: 100px;
         background-color: #000;
@@ -271,11 +179,15 @@
         font-family: 微軟正黑體;
     }
     
-    a {
+    .link a {
         text-decoration: none;
         display: block;
         padding: 0;
         color: blanchedalmond;
+    }
+    
+    .link {
+        font-size: 40px;
     }
     
     a:hover {
@@ -288,12 +200,19 @@
         font-family: 微軟正黑體;
     }
     
-    .link {
-        font-size: 40px;
-    }
-    
     .bg img {
         width: 100%;
+    }
+    
+    h2 {
+        font-family: 微軟正黑體;
+    }
+    
+    .footer {
+        background-color: #333;
+        color: #aaa;
+        text-align: center;
+        padding: 10px 0;
     }
 </style>
 
@@ -302,7 +221,7 @@
     <div class="header">
         <h1>My page</h1>
         <label for="menu" class="btn"> 
-            <span><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/104575239_2779360182191838_3543360027941471346_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=3ivvooGR0ZYAX-0lNma&_nc_ht=scontent.fkhh1-2.fna&oh=48edd356a3a4cf3a9596c716078f2113&oe=5F12E088" height="50px"></span>
+            <span><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/104575239_2779360182191838_3543360027941471346_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=3ivvooGR0ZYAX-0lNma&_nc_ht=scontent.fkhh1-2.fna&oh=48edd356a3a4cf3a9596c716078f2113&oe=5F12E088" height="70px"></span>
         </label>
         <nav>
             <div class="link"><a href="https://www.facebook.com/henry.yeh.739/">MY FB</a></div>
@@ -326,25 +245,29 @@
                     </div>
                     <div class="text">
                         <h3>NBA</h3>
-                        <p></p>
+                        <p><a href="https://zh.wikipedia.org/zh-tw/NBA">wiki(中文)</a></p>
+                        <p><a href="https://www.nba.com/?6">官網(英文)</a></p>
+                        <p><a href="https://nba.udn.com/nba/index">NBA新聞網(中文)</a></p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="pic">
-                        <img src="">
+                        <img src="f1.jpg">
                     </div>
                     <div class="text">
                         <h3>F1</h3>
-                        <p></p>
+                        <p><a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E7%BA%A7%E6%96%B9%E7%A8%8B%E5%BC%8F%E8%B5%9B%E8%BD%A6">wiki(中文)</a></p>
+                        <p><a href="https://www.formula1.com/">官網(英文)</a></p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="pic">
-                        <img src="">
+                        <img src="mlb.jpg">
                     </div>
                     <div class="text">
                         <h3>MLB</h3>
-                        <p></p>
+                        <p><a href="https://zh.wikipedia.org/zh-hant/%E7%BE%8E%E5%9C%8B%E8%81%B7%E6%A5%AD%E6%A3%92%E7%90%83%E5%A4%A7%E8%81%AF%E7%9B%9F">wiki(中文)</a></p>
+                        <p><a href="https://www.mlb.com/">官網(英文)</a></p>
                     </div>
                 </div>
             </div>

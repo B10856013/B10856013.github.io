@@ -130,9 +130,39 @@
             position: relative;
             left: 0;
             display: flex;
+            top: 0;
             width: auto;
             height: auto;
+            background-color: transparent;
+        }
+        nav a {
+            border-bottom: none;
+        }
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width: 320px) {
+        .item-group {
+            display: flex;
+        }
+        .bth {
+            display: none;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            position: relative;
+            left: 0;
+            display: flex;
             top: 0;
+            width: auto;
+            height: auto;
             background-color: transparent;
         }
         nav a {
@@ -226,7 +256,7 @@
         <nav>
             <div class="link"><a href="https://www.facebook.com/henry.yeh.739/">MY FB</a></div>
             <div class="link"><a href="https://wp.npust.edu.tw/">NPUST</a></div>
-            <div class="link"><a href="#">link</a></div>
+            <div class="link"><a href="https://moodle.npust.edu.tw/moodleset/">NPUST MOODLE</a></div>
         </nav>
     </div>
     <div class="bg">
@@ -270,6 +300,9 @@
                         <p><a href="https://www.mlb.com/">官網(英文)</a></p>
                     </div>
                 </div>
+            </div>
+            <div class="footer">
+                &copy; copyright 2020 by B10856013 葉宬亨
             </div>
         </div>
 </body>
